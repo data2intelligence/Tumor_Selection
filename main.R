@@ -98,11 +98,19 @@ for(rpt in 1:2000)
 
   if(satisfyFlag1 & satisfyFlag2 & satisfyFlag3)
   {
+    print("***********************")
     print("Group 1")
-    print(v1_selected)
+    #print(v1_selected)
+    names(v1_sorted)[names(v1_sorted)%in%names(v1_selected)] <- paste0("<",names(v1_selected),">")
+    print(v1_sorted)
+
+    print("***********************")
     print("Group 2")
-    print(v2_selected)
+    #print(v2_selected)
+    names(v2_sorted)[names(v2_sorted)%in%names(v2_selected)] <- paste0("<",names(v2_selected),">")
+    print(v2_sorted)
     break
   }
 
 }
+
