@@ -6,7 +6,6 @@ ratioDiffCutoff <- 0.2
 xlsx <- rio::import_list("Sample_data.xlsx")
 tumorSize <- xlsx[[1]]
 
-
 v1 <- tumorSize[tumorSize[,2]==1,5]
 v2 <- tumorSize[tumorSize[,2]==2,5]
 
